@@ -1,0 +1,25 @@
+
+<form method=post action="">
+  <table>
+    <tr>
+      <td>X min</td>
+      <td>{{  form.expressionInX  }}</td>
+    </tr>
+    <tr>
+      <td>Domain X max</td>
+      <td>{{  form.domain }}</td>
+    </tr>
+    <tr>
+      <td>Erase all curves?</td>
+      <td>
+        {{ form.eCurves }}
+        <br>
+      </td>
+    </tr>
+  </table>
+  <input type=submit value="Compute">
+</br>
+{% if s != None %}
+    <img src="{{ result }}" width="500">
+{% endif %}
+</form>
