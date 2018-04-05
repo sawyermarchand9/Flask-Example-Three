@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import os, time, glob
+from numpy import *
 
 
 def compute(a, b, c):
